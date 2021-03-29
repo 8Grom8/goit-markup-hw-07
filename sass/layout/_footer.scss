@@ -5,6 +5,7 @@
   .address {
     color: var(--primary-white-color);
     font-style: normal;
+    margin-right: 50px;
     .add-text {
       margin-top: 15px;
       display: flex;
@@ -28,12 +29,7 @@
 }
 .social-footer-content {
   margin-bottom: 50px;
-  .footer-text {
-    text-transform: uppercase;
-    color:var(--primary-white-color);
-    margin-bottom: 15px;
-  
-  }
+ 
   .social-links-footer {
     display: flex;
     & .social-list-icon {
@@ -42,7 +38,12 @@
   }
 }
 
-  
+.footer-text {
+  text-transform: uppercase;
+  color:var(--primary-white-color);
+  margin-bottom: 15px;
+
+}  
 
 
  

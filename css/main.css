@@ -365,7 +365,7 @@ body {
 .footer-submit {
   margin-bottom: 40px;
   align-items: center;
-  margin-left: 93px;
+  margin-left: 50px;
   justify-content: center;
 }
 
@@ -468,6 +468,10 @@ body {
   border-color: var(--accent-color);
 }
 
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
+}
+
 .contact-form-message {
   width: 100%;
   height: 120px;
@@ -495,10 +499,6 @@ body {
   height: 18px;
   left: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-form-input:focus + .contact-form-input-list .contact-form-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form-term-desc {
@@ -682,6 +682,7 @@ body {
 .footer .address {
   color: var(--primary-white-color);
   font-style: normal;
+  margin-right: 50px;
 }
 
 .footer .address .add-text {
@@ -707,18 +708,18 @@ body {
   margin-bottom: 50px;
 }
 
-.social-footer-content .footer-text {
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  margin-bottom: 15px;
-}
-
 .social-footer-content .social-links-footer {
   display: flex;
 }
 
 .social-footer-content .social-links-footer .social-list-icon {
   fill: white;
+}
+
+.footer-text {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 15px;
 }
 
 .backdrop {
@@ -757,32 +758,29 @@ body {
 }
 
 .overlay-item {
-  transform: translateY(0);
   position: relative;
-  background-color: white;
   overflow: hidden;
 }
 
-.overlay-item .overlay-text {
+.overlay-text {
+  min-height: 100%;
+  display: flex;
+  position: absolute;
   cursor: pointer;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   transform: translateY(100%);
-  position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: 0;
+  top: 0;
   transition: 250ms ease;
   color: var(--primary-white-color);
-  padding: 24px 63px;
-  text-align: center;
+  padding: 24px;
+  align-items: center;
 }
 
-.overlay-item:hover .overlay-item .overlay-text {
+.item:hover .overlay-text {
   transform: translateY(0);
 }
 
